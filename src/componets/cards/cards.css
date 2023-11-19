@@ -1,0 +1,9 @@
+.cards-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+}

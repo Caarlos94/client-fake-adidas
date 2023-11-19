@@ -1,0 +1,36 @@
+.carrito-full-container {
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px
+}
+
+.emptyCar-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-carrito-comenzar:hover, .arrowCar:hover {
+    color: #ddd;
+} 
+
+.carrito-resumen-pedido {
+    padding: 50px;
+    width: 380px;
+}
+
+.metodos-pago-car {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 9px;
+}
+
+.carrito-containt-component {
+    min-height: calc(100vh - 245px);
+}

@@ -1,0 +1,27 @@
+.cardFav-container {
+    border: 1px solid transparent;
+    position: relative;
+    font-size: 1.1rem;
+    width: 215px;
+    user-select: none;
+}
+
+.cardFav-container:hover {
+    border: 1px solid black;
+}
+
+.cardFav-container:hover > .cardFav-price-container {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out
+}
+
+.cardFav-price-container {
+    position: absolute;
+    top: 165px;
+    left: 10px;
+}
+
+.cardFav-price {
+    background-color: white;
+    padding: 4px;
+}

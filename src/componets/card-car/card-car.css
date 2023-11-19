@@ -1,0 +1,64 @@
+.card-car-container {
+    width: 640px;
+    height: 225px;
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+}
+
+.card-car-image-container {
+    height: 225px;
+}
+
+.card-car-image-container > img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.card-car-info-container {
+    padding: 20px 25px;
+}
+
+.card-car-info-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-car-info-key {
+    margin: 0;
+}
+
+.card-car-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card-car-button > p {
+    margin: 0;
+    margin-right: 13px;
+    font-size: 18px;
+}
+
+.card-car-button > button {
+    background-color: transparent;
+    border: none;
+}
+
+.card-car-button > button:hover {
+    cursor: pointer;
+}
+
+.select-talla-card {
+    margin-top: 30px;
+    width: 80px;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.card-car-info-name:hover, .card-car-info-key:hover {
+    cursor: pointer;
+}

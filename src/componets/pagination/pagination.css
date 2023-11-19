@@ -1,0 +1,29 @@
+.btn-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.container-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.btn-pagination:hover {
+    cursor: pointer;
+}
+
+.activo {
+    background-color:  white;
+    color: black;
+
+}

@@ -1,0 +1,38 @@
+.card-container {
+    border: 1px solid transparent;
+    position: relative;
+    font-size: 1.1rem;
+    width: 275px;
+    user-select: none;
+}
+
+.card-container:hover {
+    border: 1px solid black;
+}
+
+.card-container:hover > .card-price-container {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease-in-out
+}
+
+.card-price-container {
+    position: absolute;
+    top: 228px;
+    left: 10px;
+}
+
+.card-price {
+    background-color: white;
+    padding: 4px;
+}
+
+.fav-icon-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.fav-icon-container:hover {
+    cursor: pointer;
+}

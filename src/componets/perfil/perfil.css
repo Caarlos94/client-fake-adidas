@@ -1,0 +1,16 @@
+.profile-container {
+    margin-top: 20px;
+    min-height: calc(100vh - 250px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-body-container {
+    height: 100px;
+}
+
+.perfil-body-container > p {
+    font-weight: bolder;
+}
