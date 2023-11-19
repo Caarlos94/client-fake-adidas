@@ -12,9 +12,10 @@ export default function Home({ setNotification, btnValue, setBtnValue }) {
   let url = "";
 
   React.useEffect(() => {
-    if (btnValue === "all") url = "http://localhost:3001/products/";
+    if (btnValue === "all")
+      url = "http://apirest-fakeadidas.onrender.com/products/";
     else if (btnValue === "seller")
-      url = "http://localhost:3001/products/seller";
+      url = "http://apirest-fakeadidas.onrender.com/products/seller";
     fetch(url)
       .then((data) => data.json())
       .then((products) => {
@@ -29,7 +30,9 @@ export default function Home({ setNotification, btnValue, setBtnValue }) {
   React.useEffect(() => {
     if (propsContext?.button) {
       propsContext.setButton(false);
-      fetch(`http://localhost:3001/products/category/${propsContext.search}`)
+      fetch(
+        `http://apirest-fakeadidas.onrender.com/products/category/${propsContext.search}`
+      )
         .then((data) => data.json())
         .then((products) => setProducts(products));
       propsContext.setSearch("");

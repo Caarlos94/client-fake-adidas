@@ -19,8 +19,8 @@ export default function Register() {
     e.preventDefault();
     fetch(
       auth === "REGISTER"
-        ? "http://localhost:3001/auth/register/"
-        : "http://localhost:3001/auth/login/",
+        ? "http://apirest-fakeadidas.onrender.com/auth/register/"
+        : "http://apirest-fakeadidas.onrender.com/auth/login/",
       {
         method: "POST",
         body: JSON.stringify(data),

@@ -13,7 +13,7 @@ export default function Perfil() {
       navigate("/");
       return;
     }
-    fetch("http://localhost:3001/products/profile", {
+    fetch("http://apirest-fakeadidas.onrender.com/products/profile", {
       headers: {
         Authorization: token,
       },

@@ -20,7 +20,7 @@ export default function Detail({ setNotification, setNotificationCar }) {
   const [alert, setAlert] = React.useState(false);
 
   React.useEffect(() => {
-    fetch(`http://localhost:3001/products/${id}`)
+    fetch(`http://apirest-fakeadidas.onrender.com/products/${id}`)
       .then((data) => data.json())
       .then((data) => {
         if (data) setDetail(data);

@@ -21,7 +21,7 @@ export default function Carrito({ setNotificationCar }) {
           const search = value.slice(0, value.indexOf("|"));
           localStorage.setItem(`cantidad_${search}`, "1");
           setTalla(value.slice(value.indexOf("|") + 1, value.length));
-          fetch(`http://localhost:3001/products/${search}`)
+          fetch(`http://apirest-fakeadidas.onrender.com/products/${search}`)
             .then((data) => data.json())
             .then((product) => {
               setCarrito((prevState) => {
@@ -93,7 +93,7 @@ export default function Carrito({ setNotificationCar }) {
       console.log(cant);
     }
     e.preventDefault();
-    fetch("http://localhost:3001/payment/", {
+    fetch("http://apirest-fakeadidas.onrender.com/payment/", {
       method: "POST",
       body: JSON.stringify(cant),
       headers: {
