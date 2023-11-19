@@ -13,7 +13,7 @@ export default function Fav() {
         const allValues = { ...localStorage };
         const [key, value] = Object.entries(allValues)[i];
         if (key.includes("fav")) {
-          fetch(`http://apirest-fakeadidas.onrender.com/products/${value}`)
+          fetch(`https://apirest-fakeadidas.onrender.com/products/${value}`)
             .then((data) => data.json())
             .then((product) => {
               setFavs((prevState) => {

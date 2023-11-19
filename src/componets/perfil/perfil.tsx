@@ -13,7 +13,7 @@ export default function Perfil() {
       navigate("/");
       return;
     }
-    fetch("http://apirest-fakeadidas.onrender.com/products/profile", {
+    fetch("https://apirest-fakeadidas.onrender.com/products/profile", {
       headers: {
         Authorization: token,
       },
